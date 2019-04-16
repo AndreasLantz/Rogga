@@ -185,7 +185,9 @@ a {
 	#mainContent {
 		grid-template-areas:
 		'image'
-		'text';
+		'text'
+		'image2'
+		'text2';
 		gap: 30px;
 	}
 	
