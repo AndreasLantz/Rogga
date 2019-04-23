@@ -28,6 +28,7 @@ a {
 	display: grid;
 	grid-template: auto / 30px repeat(2, minmax(350px, 1fr)) 30px;
 	width: 100vw;
+	height: 106px;
 	position: fixed;
 	background-color: #21587F;
 	color: #fff;
@@ -138,6 +139,7 @@ a {
 	position: fixed;
 	bottom: 0;
 	width: 100vw;
+	height: 56px;
 	border-top: 2px solid rgba(0,0,0,.1);
 	background-color: #21587F;
 	color: #fff;
