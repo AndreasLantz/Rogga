@@ -158,8 +158,13 @@ a {
 	
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 
+	body {
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+	
 	#mainContent {
 		grid-template-areas:
 		'image'
