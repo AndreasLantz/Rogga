@@ -28,7 +28,6 @@ a {
 	display: grid;
 	grid-template: auto / 30px repeat(2, minmax(350px, 1fr)) 30px;
 	width: 100vw;
-	max-height: 11%;
 	position: fixed;
 	background-color: #21587F;
 	color: #fff;
@@ -139,7 +138,6 @@ a {
 	position: fixed;
 	bottom: 0;
 	width: 100vw;
-	max-height: 6%;
 	border-top: 2px solid rgba(0,0,0,.1);
 	background-color: #21587F;
 	color: #fff;
@@ -151,17 +149,7 @@ a {
 	place-self: center;
 }
 
-@media screen and (max-width: 1200px) {
-
-	#mainContent {
-		grid-template-areas:
-		'image'
-		'text';
-	}
-	
-}
-
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 900px) {
 
 	body {
 		overflow-y: scroll;
@@ -177,7 +165,7 @@ a {
 	}
 	
 	#indexImage {
-	width: 100%;
+	max-width: 100%;
 	max-height: 100%;
 	border-radius: 0;
 	border: 0;
