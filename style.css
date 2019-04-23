@@ -12,8 +12,6 @@ body {
 	font-family: 'Titillium Web', sans-serif;
 	border: 0;
 	background: rgba(143, 207, 255, 0.7);
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
 }
 
 a {
