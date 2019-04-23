@@ -43,7 +43,6 @@ a {
 	grid-column: 2 / span 1;
 	font-size: 30px;
 	justify-self: start;
-	
 }
 
 #header div {
@@ -161,10 +160,18 @@ a {
 	#indexImage {
 	border-radius: 0;
 	border: 0;
-}
+	}
 
-#indexParagraph {
-	border-radius: 0;
-}
+	#indexParagraph {
+		border-radius: 0;
+	}
 	
+	#header p {
+	font-size: 24px;
+	}
+	
+	#header div {
+	display: none;
+	}
+
 }
