@@ -7,21 +7,46 @@
 	<title>Härnö Småmaskinsservice</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!-- jQuery library included for automatic onLoad delay for overlays -->
-	<script src="js.js"></script>
+	<script src="js/jquery.js"></script> <!-- jQuery library included for automatic onLoad delay for overlays -->
+	<script src="js/navBtnToggle.js"></script>
 </head>
 
 <body>
 
 	<div id="header">
 		<p>Härnö Småmaskinsservice</p>
-		<div>		
+		<div id="menu">		
 			<p><a href="index.html">Startsida</a></p>
 			<p><a href="index.html">Tjänster</a></p>
 			<p><a href="index.html">Kontakt</a></p>
 		</div>
+		
+		<div id="navBtn" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			
+			
 	</div> <!-- Id header end -->
+	
+	<div id="nav">
+			<a href="index.html">Startsida</a>
+			<a href="index.html">Tjänster</a>
+			<a href="index.html">Kontakt</a>
+	</div>
+		
+		<script>
+$( "#navBtn" ).click(function() {
 
+  $( "#nav" ).slideToggle("slow");
+});
+</script>
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
 	<div id="mainContent">
 	
 		<img id="indexImage" src="img/face.jpg" />
@@ -31,15 +56,12 @@
 			<p>Välkommen till Härnö Småmaskinsservice! Vi reparerar och underhåller de flesta små motordrivna maskiner du kan tänkas ha i ditt garage. Mitt namn är Roger, och jag kommer personligen se till att varje maskin du lämnar in till oss kommer tillbaka i absolut toppskick!</p>
 			<a href="#"><button>Kom igång!</button></a>
 		</div>
-
-	
 	
 	</div><!-- mainContent wrapper end -->
 	
 	<div id="footer">
 		<p>Footer placeholder text</p>
 	</div>
-
 
 </body>
 
