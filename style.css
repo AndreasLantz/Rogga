@@ -115,8 +115,6 @@ a {
 	grid-template-areas:
 	'nav nav'
     'image text';
-	gap: 0 60px;
-	padding: 45px;
 }
 
 #nav {
@@ -146,10 +144,8 @@ a {
 
 #indexImage {
 	grid-area: image;
-	max-height: 100%;
-	max-width: 100%;
-	border-radius: 50%;
-	border: 2px solid rgba(0,0,0,.1);
+	height:100%;
+	width: 100%;
 	place-self: center;
 }
 
@@ -158,8 +154,8 @@ a {
 	place-self: center;
 	background: #fff;
 	padding: 30px;
-	border-radius: 40px;
-	border: 2px solid rgba(0,0,0,.1);
+	height: 100%;
+	border-left: 2px solid rgba(0,0,0,.1);
 }
 
 #indexParagraph h1 {
@@ -193,7 +189,7 @@ a {
 #indexParagraph button:hover {
 	cursor: pointer;
 	transform: scale(1.05);
-	background: rgba(143, 207, 255, 0.7);
+	background: #21587F;
 }
 
 /* ----- */
