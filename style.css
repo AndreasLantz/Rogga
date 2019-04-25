@@ -244,5 +244,9 @@ a {
 	#navBtn {
 	display: inline-block;
 	}
+	
+	#indexParagraph p {
+	font-size: 20px;
+	}
 
 }
