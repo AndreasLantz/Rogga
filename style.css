@@ -216,7 +216,7 @@ a {
 
 /* ----- */
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 760px) (orientation: portrait) {
 	
 	#mainContent {
 		grid: repeat(2, auto) / auto;
