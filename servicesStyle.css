@@ -17,7 +17,7 @@ body {
 	'footer';
 	font-family: 'Titillium Web', sans-serif;
 	border: 0;
-	background: rgba(143, 207, 255, 0.7);
+	background: #fff;
 	height: 100%;
 }
 
@@ -109,12 +109,24 @@ a {
 /* ----- */
 
 #mainContent {
-	overflow: hidden;
+	overflow: scroll;
 	grid-area: content;
 	display: grid;
-	grid: 1fr / auto;
+	gap: 30px;
+	padding: 0 30px 0px 30px;
+	grid: auto / repeat(3, 1fr);
 	grid-template-areas:
-	'image text';
+	'help help help'
+	'tile1 tile2 tile3'
+	'tile4 tile5 tile6'
+	'tile7 tile8 tile9';
+}
+
+#mainContent h1 {
+	grid-area: help;
+	place-self: center;
+	font-size: 50px;
+	border-bottom: 6px solid rgba(0,0,0,.1);
 }
 
 #nav {
@@ -142,56 +154,83 @@ a {
 	background: rgba(143, 207, 255, 0.7);
 }
 
-#indexImage {
-	grid-area: image;
-	place-self: start;
+.tile {
+	position: relative;
 	width: 100%;
-	/* Height is defined in media queries */
-}
-
-#indexParagraph {
-	
-	grid-area: text;
-	place-self: center;
-	background: #fff;
-	padding: 0 30px 0 30px;
-	height: 100%;
-	max-width: 100%;
-	border-left: 2px solid rgba(0,0,0,.1);
-}
-
-#indexParagraph h1 {
-	font-size: 40px;
-	border-bottom: 6px solid rgba(0,0,0,.1);
-}
-
-#indexParagraph p {
-	font-size: 24px;
-}
-
-#indexParagraph a {
-	border-radius: 20px;
-	height: fit-content;
-
-}
-
-#indexParagraph a button {
-	width: 100%;
-	font-size: 50px;
-	background: #fff;
 	border: 2px solid rgba(0,0,0,.1);
-	border-radius: 20px;
+}
+
+.tileImage {
+	display: block;
+	width: 100%;
+
+}
+
+.overlay {
+	position: absolute;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	top: 0; 
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
 	-moz-transition: 0.3s;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
-	outline: none;
-	padding: 10px 0 10px 0;
+	
 }
 
-#indexParagraph button:hover {
-	cursor: pointer;
-	transform: scale(1.03);
-	background: #21587F;
+.tile:hover .overlay {
+	opacity: 1;
+}
+
+.overlayText {
+	position: absolute;
+	font-family: 'Raleway', sans-serif;
+	top: 50%;
+	left: 50%;
+	font-size: 60px;
+	color: white;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+
+#tile1 {
+	grid-area: tile1;
+}
+
+#tile2 {
+	grid-area: tile2;
+}
+
+#tile3 {
+	grid-area: tile3;
+}
+
+#tile4 {
+	grid-area: tile4;
+}
+
+#tile5 {
+	grid-area: tile5;
+}
+
+#tile6 {
+	grid-area: tile6;
+}
+
+#tile7 {
+	grid-area: tile7;
+}
+
+#tile8 {
+	grid-area: tile8;
+}
+
+#tile9 {
+	grid-area: tile9;
 }
 
 /* ----- */
@@ -211,26 +250,16 @@ a {
 
 /* ----- */
 
-@media screen and (min-width: 1024px) {
-	
-	#indexImage {
-		height: 100%;
-	}
-
-}
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 568px) {
 	
 	#mainContent {
-		overflow: scroll;
 		grid: auto / auto;
 		grid-template-areas:
-		'image'
 		'text';
 	}
 	
 	#indexImage {
-		max-height: 80%;
+		display: none;
 	}
 	
 	#header {
