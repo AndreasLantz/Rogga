@@ -109,7 +109,7 @@ a {
 /* ----- */
 
 #mainContent {
-	overflow: scroll;
+	overflow: hidden;
 	grid-area: content;
 	display: grid;
 	grid: 1fr / auto;
@@ -145,12 +145,8 @@ a {
 #indexImage {
 	grid-area: image;
 	place-self: start;
-	min-height: 100%;
-	width: 45vw;
-	background-image: url("img/face.jpg");
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: cover; /* Resize the background image to cover the entire container */
+	width: 100%;
+	/* Height is defined in media queries */
 }
 
 #indexParagraph {
@@ -215,16 +211,26 @@ a {
 
 /* ----- */
 
+@media screen and (min-width: 568px) {
+	
+	#indexImage {
+		height: 100%;
+	}
+
+}
+
 @media screen and (max-width: 568px) {
 	
 	#mainContent {
+		overflow: scroll;
 		grid: auto / auto;
 		grid-template-areas:
+		'image'
 		'text';
 	}
 	
 	#indexImage {
-		display: none;
+		max-height: 100%;
 	}
 	
 	#header {
