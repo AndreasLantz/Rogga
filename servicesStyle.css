@@ -270,10 +270,10 @@ a {
 
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 568px) and (orientation: portrait) {
 	
 	#mainContent {
-		grid: auto / auto;
+		grid: auto repeat(9, 20%) / auto;
 		grid-template-areas:
 		'help'
 		'tile1'
@@ -315,7 +315,6 @@ a {
 		font-size: 24px;
 		grid-area: servicesText;
 		place-self: center;
-		padding: 30px;
 	}
 	
 	.overlay {
