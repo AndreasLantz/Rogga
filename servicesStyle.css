@@ -26,10 +26,19 @@ a {
 	color: black;
 }
 
+/* Hides scrollbar */
 ::-webkit-scrollbar
 {
 	display: none;
 }
+/* */
+
+/* Hides scrollbar in IE */
+html, body { 
+	-ms-overflow-style: none;
+	overflow: auto;
+}
+/* */
 
 /* ----- */
 
