@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=1">
+	<title>Härnö Småmaskinsservice</title>
+	<link rel="stylesheet" href="servicesStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<script src="js/jquery.js"></script> <!-- jQuery library included for automatic onLoad delay for overlays -->
+</head>
+
+<body>
+
+<!-- Header start -->
+	<div id="header">
+		<a href="index.html"><p>Härnö Småmaskinsservice</p></a>
+		
+<!-- Menu. Visible on wider widths -->
+		<div id="menu">		
+			<p><a href="index.html">Startsida</a></p>
+			<p><a href="tjanster.html">Tjänster</a></p>
+			<p><a href="kontakt.html">Kontakt</a></p>
+		</div>
+<!-- Menu for wider widths end -->
+
+<!-- Menu button. Visible on narrower widths-->
+		<div id="navBtn" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+<!-- Menu button end-->
+
+		</div>
+<!-- Header end -->
+	
+<!-- Menu. Visible on narrower widths (Requires toggle. See JS below) -->
+	<div id="nav">
+			<a href="index.html">Startsida</a>
+			<a href="tjanster.html">Tjänster</a>
+			<a href="kontakt.html">Kontakt</a>
+	</div>
+<!-- Menu for narrower widths end-->
+		
+<!-- JS for expanding menu (narrower widths) -->
+
+	<script><!-- Hides #nav on load to only make it visible when toggled -->
+		$(document).ready(function(){
+			$("#nav").hide();
+		});
+	</script><!-- -->
+	
+	<script><!-- Toggles #nav -->
+		$( "#navBtn" ).click(function() {
+		  $( "#nav" ).slideToggle("slow");
+		});
+	</script><!-- -->
+
+	<script><!-- Changes menu icon look -->
+		function myFunction(x) {
+		  x.classList.toggle("change");
+		}
+	</script><!-- -->
+	
+<!-- JS end -->
+
+<div id="mainContent">
+
+	<h1>Jag vill ha hjälp med:</h1>
+		
+		<a href="klippare.html"><div id="tile1" class="tile">
+			<img class="tileImage" src="img/klippare-min.png" />
+			<div class="mobileServicesText">Gräsklippare</div>
+				<div class="overlay">
+					<div class="overlayText">Gräsklippare</div>
+				</div>
+		</div></a>
+		
+		<a href="motorsag.html"><div id="tile2" class="tile">
+			<img class="tileImage" src="img/motorsag-min.png" />
+			<div class="mobileServicesText">Motorsåg</div>
+				<div class="overlay">
+					<div class="overlayText">Motorsåg</div>
+				</div>
+		</div></a>
+		
+		<a href="rojsag.html"><div id="tile3" class="tile">
+			<img class="tileImage" src="img/rojsag-min.png" />
+			<div class="mobileServicesText">Röjsåg</div>
+				<div class="overlay">
+					<div class="overlayText">Röjsåg</div>
+				</div>
+		</div></a>
+		
+		<a href="trimmer.html"><div id="tile4" class="tile">
+			<img class="tileImage" src="img/trimmer-min.png" />
+			<div class="mobileServicesText">Trimmer</div>
+				<div class="overlay">
+					<div class="overlayText">Trimmer</div>
+				</div>
+		</div></a>
+		
+		<a href="snoslunga.html"><div id="tile5" class="tile">
+			<img class="tileImage" src="img/snoslunga-min.png" />
+			<div class="mobileServicesText">Snöslunga</div>
+				<div class="overlay">
+					<div class="overlayText">Snöslunga</div>
+				</div>
+		</div></a>
+		
+		<a href="lovblas.html"><div id="tile6" class="tile">
+			<img class="tileImage" src="img/lovblas-min.png" />
+			<div class="mobileServicesText">Lövblås</div>
+				<div class="overlay">
+					<div class="overlayText">Lövblås</div>
+				</div>
+		</div></a>
+		
+		<div id="tile7" class="tile">
+			<img class="tileImage" src="img/face.jpg" />
+			<div class="mobileServicesText">Gräsklippare</div>
+				<a href="#"><div class="overlay">
+					<div class="overlayText">Gräsklippare</div>
+				</div></a>
+		</div>
+		
+		<div id="tile8" class="tile">
+			<img class="tileImage" src="img/face.jpg" />
+			<div class="mobileServicesText">Gräsklippare</div>
+				<a href="#"><div class="overlay">
+					<div class="overlayText">Gräsklippare</div>
+				</div></a>
+		</div>
+		
+		<div id="tile9" class="tile">
+			<img class="tileImage" src="img/face.jpg" />
+			<div class="mobileServicesText">Gräsklippare</div>
+				<a href="#"><div class="overlay">
+					<div class="overlayText">Gräsklippare</div>
+				</div></a>
+		</div>
+	
+	</div><!-- mainContent wrapper end -->
+	
+	<div id="footer">
+		<p>Footer placeholder text</p>
+	</div>
+
+</body>
+
+</html>
