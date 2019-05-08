@@ -51,13 +51,13 @@ html, body {
 	background-color: #21587F;
 	color: #fff;
 	overflow: hidden;
-	border-bottom: 2px solid rgba(0,0,0,.1);
+	border-bottom: 2px solid #ccc;
 	padding: 0 30px 0 30px;
 }
 
 #header a  {
 	grid-area: logo;
-	font-size: 30px;
+	font-size: 24px;
 	justify-self: start;
 	color: #fff;
 	display: block;
@@ -70,7 +70,7 @@ html, body {
 	max-width: 100%;
 }
 
-#header div p {
+#menu p {
 	display: inline-block;
 	padding: 10px;
 	border-left: 2px solid rgba(255,255,255,.5);
@@ -78,10 +78,9 @@ html, body {
 	-moz-transition: 0.3s;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
-	font-size: 24px;
 }
 
-#header div p a {
+#menu p a {
 	color: #fff;
 }
 
@@ -151,16 +150,22 @@ html, body {
 }
 
 #indexImage {
-	grid-area: image;
 	place-self: start;
 	width: 45%;
 	/* Height is defined in media queries, due to it being defined as "height" in browser and "max-height" on narrower devices */
 }
 
+#gMap {
+	place-self: start;
+	width: 48%;
+	border: 0;
+	/* Height is defined in media queries, due to it being defined as "height" in browser and "max-height" on narrower devices */
+}
+
 #indexParagraph {
+	display: grid;
 	overflow: scroll;
 	grid-area: text;
-	place-self: center;
 	background: #fff;
 	padding: 0 30px 0 30px;
 	height: 100%;
@@ -189,12 +194,11 @@ html, body {
 #indexParagraph a {
 	border-radius: 20px;
 	height: fit-content;
-
 }
 
 #indexParagraph a button {
 	width: 100%;
-	font-size: 50px;
+	font-size: 30px;
 	background: #fff;
 	border: 2px solid rgba(0,0,0,.1);
 	border-radius: 20px;
@@ -230,8 +234,8 @@ html, body {
 
 @media screen and (min-width: 1024px) {
 	
-	#indexImage {
-	
+	#gMap {
+		height: 100%;
 	}
 
 }
@@ -247,7 +251,7 @@ html, body {
 		'text';
 	}
 	
-	#indexImage {
+	#indexImage, #gMap {
 		width: 100%;
 	}
 	
@@ -257,7 +261,7 @@ html, body {
 	}
 	
 	#indexParagraph a button {
-	font-size: 36px;
+	font-size: 24px;
 	}
 	
 	#header {
