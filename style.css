@@ -163,8 +163,8 @@ html, body {
 }
 
 #indexParagraph {
-	display: grid;
 	overflow: scroll;
+	place-self: center;
 	grid-area: text;
 	background: #fff;
 	padding: 0 30px 0 30px;
