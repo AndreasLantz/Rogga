@@ -82,6 +82,7 @@ html, body {
 
 #menu p a {
 	color: #fff;
+	font-size: 24px;
 }
 
 #header div p:hover {
@@ -163,6 +164,11 @@ html, body {
 }
 
 #indexParagraph {
+	display: grid;
+	grid: repeat(2, auto) / auto;
+	grid-template-areas:
+	'indexText'
+	'indexButton';
 	overflow: scroll;
 	place-self: center;
 	grid-area: text;
@@ -173,17 +179,38 @@ html, body {
 	border-left: 2px solid rgba(0,0,0,.1);
 }
 
+#indexText {
+	grid-area: indexText;
+	place-self: start;
+}
+
+#indexButtonArea {
+	grid-area: indexButton;
+	place-self: center;
+	padding: 30px;
+}
+
 #indexParagraph h1 {
-	font-size: 40px;
-	border-bottom: 4px solid rgba(0,0,0,.1);
+	font-size: 36px;
+
 }
 
 #indexParagraph p {
-	font-size: 22px;
+	font-size: 20px;
 }
 
-#indexParagraph ul {
-	font-size: 18px;
+.indexList li {
+	list-style: circle inside url("img/checkmark2.svg");
+	font-size: 30px;
+}
+
+.indexList li span {
+	font-size: 20px;
+}
+
+.allLists li {
+	list-style: none;
+	font-size: 20px;
 }
 
 .price {
@@ -191,25 +218,20 @@ html, body {
 	font-size: 40px;
 }
 
-#indexParagraph a {
-	border-radius: 20px;
-	height: fit-content;
-}
-
-#indexParagraph a button {
+#indexButton {
 	width: 100%;
 	font-size: 30px;
-	background: #fff;
+	background: #CF2400;
 	border: 2px solid rgba(0,0,0,.1);
-	border-radius: 20px;
 	-moz-transition: 0.3s;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
 	outline: none;
-	padding: 10px 0 10px 0;
+	padding: 15px 40px 15px 40px;
+	color: #fff;
 }
 
-#indexParagraph button:hover {
+#indexButton:hover {
 	cursor: pointer;
 	transform: scale(1.03);
 	background: #21587F;
@@ -219,15 +241,34 @@ html, body {
 
 #footer {
 	display: grid;
-	grid: auto / auto;
 	grid-area: footer;
+	grid: auto / 40% 60%;
+	grid-template-areas:
+	'copyright socialMedia';
 	border-top: 2px solid rgba(0,0,0,.1);
 	background-color: #21587F;
 	color: #fff;
+	padding: 0 30px 0 30px;
+	font-size: 16px;
 }
 
-#footer p {
-	place-self: center;
+#copyright {
+	display: block;
+	grid-area: copyright;
+	place-self: center start;
+}
+
+#socialMedia {
+	grid-area: socialMedia;
+	display: flex; 
+	place-self: center end;
+	padding: 10px 0px 10px 0px;
+}
+
+.socialMediaIcon {
+	width: 50px;
+	display: inline-block;
+	margin-left: 25px;
 }
 
 /* ----- */
@@ -260,8 +301,8 @@ html, body {
 		width: 90%;
 	}
 	
-	#indexParagraph a button {
-	font-size: 24px;
+	#indexButton {
+	font-size: 20px;
 	}
 	
 	#header {
@@ -270,8 +311,8 @@ html, body {
     'logo logo nav-btn';
 	}
 
-	#header p {
-	font-size: 24px;
+	#header a {
+	font-size: 20px;
 	}
 	
 	#menu {
@@ -286,4 +327,72 @@ html, body {
 	font-size: 20px;
 	}
 
+	#footer {
+	grid: auto / auto;
+	grid-template-areas:
+	'socialMedia'
+	'copyright';
+	font-size: 9px;
+	}
+
+	#copyright {
+		place-self: center;
+	}
+
+	#socialMedia {
+		place-self: center;
+	}
+
+	.socialMediaIcon {
+		width: 30px;
+		margin-left: 15px;
+	}
+
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+	
+	#indexImage, #gMap {
+		width: 30%;
+	}
+	
+	#indexParagraph {
+		width: 70%;
+	}
+	
+	#indexParagraph h1 {
+	font-size: 30px;
+	}
+	
+	#indexParagraph p {
+	font-size: 16px;
+	}
+	
+	#indexButton {
+	font-size: 20px;
+	}
+	
+	#header {
+	grid-template: auto / repeat(2, minmax(100px, 1fr)) 30px;
+	grid-template-areas:
+    'logo logo nav-btn';
+	}
+	
+	#menu {
+	display: none;
+	}
+	
+	#navBtn {
+	display: inline-block;
+	}
+	
+	#footer {
+		font-size: 12px;
+	}
+
+	.socialMediaIcon {
+		width: 30px;
+		margin-left: 15px;
+	}
+	
 }
