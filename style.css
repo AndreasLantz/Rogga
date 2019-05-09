@@ -229,6 +229,7 @@ html, body {
 	outline: none;
 	padding: 15px 40px 15px 40px;
 	color: #fff;
+	z-index: 99;
 }
 
 #indexButton:hover {
