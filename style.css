@@ -226,10 +226,10 @@ html, body {
 	-moz-transition: 0.3s;
 	-webkit-transition: 0.3s;
 	transition: 0.3s;
-	outline: none;
-	padding: 15px 40px 15px 40px;
+	padding: 15px;
 	color: #fff;
 	z-index: 99;
+	text-align: center;
 }
 
 #indexButton:hover {
