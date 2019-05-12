@@ -16,9 +16,9 @@
 <!-- Header start -->
 	<div id="header">
 		<a href="index.html"><p>Härnö Småmaskinsservice</p></a>
-		
+
 <!-- Menu. Visible on wider widths -->
-		<div id="menu">		
+		<div id="menu">
 			<p><a href="index.html">Startsida</a></p>
 			<p><a href="tjanster.html">Tjänster</a></p>
 			<p><a href="kontakt.html">Kontakt</a></p>
@@ -35,7 +35,7 @@
 
 		</div>
 <!-- Header end -->
-	
+
 <!-- Menu. Visible on narrower widths (Requires toggle. See JS below) -->
 	<div id="nav">
 			<a href="index.html">Startsida</a>
@@ -43,7 +43,7 @@
 			<a href="kontakt.html">Kontakt</a>
 	</div>
 <!-- Menu for narrower widths end-->
-		
+
 <!-- JS for expanding menu (narrower widths) -->
 
 	<script><!-- Hides #nav on load to only make it visible when toggled -->
@@ -51,7 +51,7 @@
 			$("#nav").hide();
 		});
 	</script><!-- -->
-	
+
 	<script><!-- Toggles #nav -->
 		$( "#navBtn" ).click(function() {
 		  $( "#nav" ).slideToggle("slow");
@@ -63,13 +63,14 @@
 		  x.classList.toggle("change");
 		}
 	</script><!-- -->
-	
+
 <!-- JS end -->
 
 <div id="mainContent">
-	
-		<img id="indexImage" src="img/face.jpg" />
-		
+
+		<img class="indexImage" id="desktop" src="img/cropped.jpg" />
+		<img class="indexImage" id="mobile" src="img/full-min.jpg" />
+
 		<div id="indexParagraph">
 			<div id="indexText">
 				<h1>Välkommen!</h1>
@@ -88,19 +89,20 @@
 			<hr>
 			</div>
 			<div id="indexButtonArea">
-				<a href="tjanster.html"><button id="indexButton"><b>Min maskin behöver service!</b></button></a>
+				<a href="tjanster.html"><div id="indexButton"><b>Min maskin behöver service!</b></div></a>
 			</div>
 		</div>
-	
+
 	</div><!-- mainContent wrapper end -->
-	
+
 	<div id="footer">
 		<p id="copyright">Copyright© 2019 Härnö Småmaskinsservice | Sida skapad av <a href="https://linkedin.com/in/and-lantz/" target="_blank"><span style="color: #fff;"><u><i>Andreas Lantz</i></u></span></a></p>
-		<div id="socialMedia">		
+		<!-- Remove these comment brackets to activate social media icons
+		<div id="socialMedia">
 			<p>Hitta oss på:&nbsp;</p>
-			<a href="fb"><img class="socialMediaIcon" src="img/fbLogo.png" /></a>
-			<a href="fb"><img class="socialMediaIcon" src="img/igLogo.png" /></a>
-		</div>
+			<a href="insertlinkhere"><img class="socialMediaIcon" src="img/fbLogo.png" /></a>
+			<a href="insertlinkhere"><img class="socialMediaIcon" src="img/igLogo.png" /></a>
+		</div>-->
 	</div>
 
 </body>
