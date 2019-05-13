@@ -252,23 +252,24 @@ html, body {
 	font-size: 16px;
 }
 
-#copyright {
-	display: block;
-	grid-area: copyright;
-	place-self: center start;
+	#copyright {
+		display: block;
+		grid-area: copyright;
+		place-self: center start;
 }
 
-#socialMedia {
-	grid-area: socialMedia;
-	display: flex;
-	place-self: center end;
-	padding: 10px 0px 10px 0px;
+	/* Id socialMedia and class socialMediaIcon is for social media section in footer. */
+	#socialMedia {
+		grid-area: socialMedia;
+		display: flex;
+		place-self: center end;
+		padding: 10px 0px 10px 0px;
 }
 
-.socialMediaIcon {
-	width: 50px;
-	display: inline-block;
-	margin-left: 25px;
+	.socialMediaIcon {
+		width: 50px;
+		display: inline-block;
+		margin-left: 25px;
 }
 
 /* ----- */
@@ -379,7 +380,7 @@ html, body {
 		grid-template-areas:
 		'socialMedia'
 		'copyright';
-		font-size: 9px;
+		font-size: 12px;
 	}
 
 	#copyright {
