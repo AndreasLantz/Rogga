@@ -45,9 +45,11 @@ html, body {
 /* ----- */
 
 #header {
+	display: -ms-grid;
 	display: grid;
-	grid-template: auto / repeat(2, minmax(350px, 1fr));
-	grid-template-areas:
+	-ms-grid-columns: (minmax(350px, 1fr))[2];
+	    grid-template: auto / repeat(2, minmax(350px, 1fr));
+	    grid-template-areas:
     'logo menu';
 	grid-area: header;
 	background-color: #21587F;
@@ -211,7 +213,7 @@ html, body {
 }
 
 .indexList li {
-	list-style: circle inside url("img/checkmark2.svg");
+	list-style: circle inside url("img/checkmark.svg");
 	font-size: 30px;
 }
 
@@ -220,7 +222,7 @@ html, body {
 }
 
 .allLists li {
-	list-style: none;
+	list-style: disc;
 	font-size: 20px;
 }
 
@@ -263,25 +265,25 @@ html, body {
 	font-size: 16px;
 }
 
-#copyright {
-	display: block;
-	grid-area: copyright;
-	place-self: center start;
-}
+	#copyright {
+		display: block;
+		grid-area: copyright;
+		place-self: center start;
+	}
 
-/* Id socialMedia and class socialMediaIcon is for social media section in footer. */
-#socialMedia {
-	grid-area: socialMedia;
-	display: flex;
-	place-self: center end;
-	padding: 10px 0px 10px 0px;
-}
+	/* Id socialMedia and class socialMediaIcon is for social media section in footer. */
+	#socialMedia {
+		grid-area: socialMedia;
+		display: flex;
+		place-self: center end;
+		padding: 10px 0px 10px 0px;
+	}
 
-.socialMediaIcon {
-	width: 50px;
-	display: inline-block;
-	margin-left: 25px;
-}
+	.socialMediaIcon {
+		width: 50px;
+		display: inline-block;
+		margin-left: 25px;
+	}
 
 /* ----- */
 
