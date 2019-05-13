@@ -80,7 +80,7 @@ html, body {
 	grid-area: menu;
 	-ms-flex-item-align: center;
 	    align-self: center;
-	justify-self: end;
+	-ms-grid-column-align: end;
 	max-width: 100%;
 }
 
