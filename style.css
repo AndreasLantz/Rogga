@@ -68,9 +68,13 @@ html, body {
 }
 
 #menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	grid-area: menu;
-	place-self: center end;
+	-ms-flex-item-align: center;
+	    align-self: center;
+	justify-self: end;
 	max-width: 100%;
 }
 
