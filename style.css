@@ -262,6 +262,7 @@ html, body {
 	padding: 15px 40px 15px 40px;
 	color: #fff;
 	width: fit-content;
+	z-index: 1;
 }
 
 #indexButton:hover {
