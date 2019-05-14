@@ -146,6 +146,7 @@ html, body {
 	overflow: hidden;
 	grid-area: content;
 	display: flex;
+	z-index: 3;
 }
 
 #nav {
@@ -208,7 +209,7 @@ html, body {
 	height: 100%;
 	width: auto;
 	border-left: 2px solid rgba(0,0,0,.1);
-	z-index: -1;
+	z-index: 5;
 }
 
 #indexText {
@@ -263,7 +264,8 @@ html, body {
 	padding: 15px 40px 15px 40px;
 	color: #fff;
 	width: fit-content;
-	z-index: 1;
+	height: fit-content;
+	z-index: 10;
 }
 
 #indexButton:hover {
