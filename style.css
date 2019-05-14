@@ -48,10 +48,10 @@ html, body {
 	display: -ms-grid;
 	display: grid;
 	-ms-grid-columns: (minmax(350px, 1fr))[2];
-	    -ms-grid-columns: (minmax(350px, 1fr))[2];
-	        grid-template: auto / repeat(2, minmax(350px, 1fr));
-	        grid-template-areas:
-    'logo menu';
+	-ms-grid-columns: (minmax(350px, 1fr))[2];
+	grid-template: auto / repeat(2, minmax(350px, 1fr));
+	grid-template-areas:
+	'logo menu';
 	grid-area: header;
 	background-color: #21587F;
 	color: #fff;
@@ -326,6 +326,7 @@ html, body {
 
 	#mainContent {
 		overflow: scroll;
+		display: -ms-grid;
 		display: grid;
 		grid: auto / auto;
 		grid-template-areas:
@@ -356,9 +357,10 @@ html, body {
 	}
 
 	#header {
-	grid-template: auto / repeat(2, minmax(100px, 1fr)) 30px;
-	grid-template-areas:
-    'logo logo nav-btn';
+		-ms-grid-columns: (minmax(100px, 1fr))[2] 30px;
+		grid-template: auto / repeat(2, minmax(100px, 1fr)) 30px;
+		grid-template-areas:
+  	'logo logo nav-btn';
 	}
 
 	#header a {
