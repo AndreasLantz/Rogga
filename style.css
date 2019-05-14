@@ -255,6 +255,7 @@ html, body {
 }
 
 #indexButton {
+	display: block;
 	font-size: 30px;
 	background: #CF2400;
 	border: 2px solid rgba(0,0,0,.1);
