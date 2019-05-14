@@ -250,12 +250,8 @@ html, body {
 	font-size: 40px;
 }
 
-#indexButtonArea a {
-	z-index: 10;
-	display: block;
-}
-
 #indexButton {
+	display: block;
 	font-size: 30px;
 	background: #CF2400;
 	border: 2px solid rgba(0,0,0,.1);
@@ -266,7 +262,6 @@ html, body {
 	padding: 15px 40px 15px 40px;
 	color: #fff;
 	width: fit-content;
-	z-index: 1;
 }
 
 #indexButton:hover {
