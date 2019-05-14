@@ -265,7 +265,10 @@ html, body {
 	color: #fff;
 	width: fit-content;
 	height: fit-content;
-	z-index: 10;
+	align-self: center;
+	justify-self: center;
+	place-self: center;
+	-ms-grid-column-align: end;
 }
 
 #indexButton:hover {
