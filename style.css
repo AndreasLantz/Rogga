@@ -252,10 +252,10 @@ html, body {
 
 #indexButtonArea a {
 	z-index: 10;
+	display: block;
 }
 
 #indexButton {
-	display: block;
 	font-size: 30px;
 	background: #CF2400;
 	border: 2px solid rgba(0,0,0,.1);
