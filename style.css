@@ -269,6 +269,8 @@ html, body {
 	justify-self: center;
 	place-self: center;
 	-ms-grid-column-align: end;
+	margin-bottom: 30px;
+	text-align: center;
 }
 
 #indexButton:hover {
