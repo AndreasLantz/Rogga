@@ -198,7 +198,7 @@ html, body {
 }
 
 @supports not (display: grid) {
-  .tile1 {
+  .tile {
 		width: 33%;
     float: left;
   }
