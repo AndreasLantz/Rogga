@@ -206,8 +206,7 @@ html, body {
 	}
 
 	#mainContent h1 {
-		float: left;
-		display: block;
+		display: none;
 	}
 
 }
