@@ -145,6 +145,7 @@ html, body {
 #mainContent {
 	overflow: scroll;
 	grid-area: content;
+	display: -ms-grid;
 	display: grid;
 	gap: 30px;
 	padding: 0 30px 0px 30px;
