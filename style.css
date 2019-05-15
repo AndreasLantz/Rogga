@@ -435,6 +435,10 @@ html, body {
     'logo logo nav-btn';
 	}
 
+	#header a {
+	font-size: 20px;
+	}
+
 	#menu {
 	display: none;
 	}

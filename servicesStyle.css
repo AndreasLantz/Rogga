@@ -377,7 +377,7 @@ html, body {
 		padding: 0;
 		text-align: center;
 	}
-	
+
 	#tile6 {
 		margin-bottom: 0px;
 	}
@@ -524,6 +524,10 @@ html, body {
 	grid-template: auto / repeat(2, minmax(100px, 1fr)) 30px;
 	grid-template-areas:
     'logo logo nav-btn';
+	}
+
+	#header a {
+	font-size: 20px;
 	}
 
 	#menu {
