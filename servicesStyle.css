@@ -158,6 +158,13 @@ html, body {
 	'tile4 tile5 tile6';
 }
 
+@supports not (display: grid) {
+  .tile1 {
+		width: 33%;
+    float: left;
+  }
+}
+
 #mainContent h1 {
 	grid-area: help;
 	-ms-grid-row: 1;
