@@ -150,7 +150,7 @@ html, body {
 	gap: 30px;
 	padding: 0 30px 0px 30px;
 	-ms-grid-columns: repeat(3, 1fr);
-	-ms-grid-rows: repeat(3, 1fr)
+	-ms-grid-rows: 10% 45% 45%
 	grid: auto / repeat(3, 1fr);
 	grid-template-areas:
 	'help help help'
@@ -291,6 +291,7 @@ html, body {
 /* ----- */
 
 #footer {
+	display: -ms-grid;
 	display: grid;
 	grid-area: footer;
 	grid: auto / 40% 60%;
