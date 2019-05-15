@@ -202,10 +202,12 @@ html, body {
 	.tile {
 		width: 33%;
 		float: left;
+		display: block;
 	}
 
 	#mainContent h1 {
 		float: left;
+		display: block;
 	}
 
 }
