@@ -197,11 +197,11 @@ html, body {
 	border: 2px solid rgba(0,0,0,.1);
 }
 
-@supports not (display: grid) {
-  .tile {
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.tile {
 		width: 33%;
-    float: left;
-  }
+		float: left;
+	}
 }
 
 .tileImage {
