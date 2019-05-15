@@ -158,13 +158,6 @@ html, body {
 	'tile4 tile5 tile6';
 }
 
-@supports not (display: grid) {
-  .tile1 {
-		width: 33%;
-    float: left;
-  }
-}
-
 #mainContent h1 {
 	grid-area: help;
 	-ms-grid-row: 1;
@@ -202,6 +195,13 @@ html, body {
 	position: relative;
 	width: 100%;
 	border: 2px solid rgba(0,0,0,.1);
+}
+
+@supports not (display: grid) {
+  .tile1 {
+		width: 33%;
+    float: left;
+  }
 }
 
 .tileImage {
