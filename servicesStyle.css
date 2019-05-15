@@ -198,10 +198,16 @@ html, body {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
 	.tile {
 		width: 33%;
 		float: left;
 	}
+
+	#mainContent h1 {
+		float: top;
+	}
+
 }
 
 .tileImage {

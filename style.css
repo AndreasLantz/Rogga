@@ -176,7 +176,7 @@ html, body {
 
 .indexImage {
 	place-self: start;
-	width: 45%;
+	min-width: 45%;
 	/* Height is defined in media queries, due to it being defined as "height" in browser and "max-height" on narrower devices */
 }
 
@@ -314,7 +314,11 @@ html, body {
 
 /* ----- */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
+
+	.indexImage {
+		height: 100%
+	}
 
 	#gMap {
 		height: 100%;
@@ -404,8 +408,9 @@ html, body {
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
 
-	#indexImage, #gMap {
-		width: 30%;
+	.indexImage, #gMap {
+		min-width: 30%;
+		max-height: 100%;
 	}
 
 	#indexParagraph {
