@@ -190,7 +190,7 @@ html, body {
 
 #gMap {
 	place-self: start;
-	width: 48%;
+	min-width: 45%;
 	border: 0;
 	/* Height is defined in media queries, due to it being defined as "height" in browser and "max-height" on narrower devices */
 }

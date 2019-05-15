@@ -5,10 +5,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=1">
 	<title>Härnö Småmaskinsservice</title>
+	<meta name="description" content="Serva din maskin hos Härnö Småmaskinsservice!">
+	<meta name=”robots” content="index, foLlow"> 
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 	<script src="js/jquery.js"></script> <!-- jQuery library included for automatic onLoad delay for overlays -->
-	<script src="js/navBtnToggle.js"></script>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
@@ -68,16 +78,17 @@
 
 <div id="mainContent">
 
-		<img class="indexImage" id="desktop" src="img/cropped.jpg" />
-		<img class="indexImage" id="mobile" src="img/full-min.jpg" />
+		<!-- Different images for desktop/mobile -->
+		<img class="indexImage" id="desktop" src="img/cropped.jpg" alt="Bild på Roger, ägaren av Härnö Småmaskinsservice" />
+		<img class="indexImage" id="mobile" src="img/full-min.jpg" alt="Bild på Roger, ägaren av Härnö Småmaskinsservice" />
 
-		<div id="indexParagraph">
-			<div id="indexText">
+		<div id="indexParagraph"> <!-- Wrapper for right-side area -->
+			<div id="indexText"> <!-- Wrapper for text, excluding button -->
 				<h1>Välkommen!</h1>
 			<hr>
-				<p>Välkommen till Härnö Småmaskinsservice! Vi underhåller, servar och reparerar de flesta små motordrivna maskiner du kan tänkas ha i ditt garage.</p>
+				<p>Välkommen till Härnö Småmaskinsservice! Vi underhåller, servar och reparerar de flesta små motordrivna maskiner du kan tänkas ha i ditt garage. Vi erbjuder dessutom hämtningsservice till ett förmånligt pris!</p>
 			<hr>
-				<p>Hos oss får du alltid:</p>
+				<p><b>Hos oss får du alltid:</b></p>
 					<ul class="indexList">
 						<li><span>Snabb service</span></li>
 						<li><span>Konkurrenskraftiga priser</span></li>
@@ -86,7 +97,9 @@
 					</ul>
 			<hr>
 				<p><i>"Mitt namn är Roger, och jag kommer personligen se till att varje maskin du lämnar in till oss kommer tillbaka till dig i absolut toppskick!"</i></p>
-			<hr>
+				<hr style="color: black;">
+					<a href="kontakt.html"><p>Vill du istället sälja din maskin? Tryck här!</p></a>
+				<hr>
 			</div>
 				<a id="indexButton" href="tjanster.html"><b>Min maskin behöver service!</b></a>
 		</div>
