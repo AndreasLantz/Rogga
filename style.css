@@ -354,6 +354,7 @@ html, body {
 		border: 0;
 		width: 90%;
 		padding: 0;
+		overflow: visible;
 	}
 
 	#indexButton {
@@ -457,21 +458,3 @@ html, body {
 	}
 
 }
-@media only screen and (max-width: 600px) {
-	#indexParagraph {
-		display: grid;
-		grid: repeat(2, auto) / auto;
-		grid-template-areas:
-		'indexText'
-		'indexButton';
-		overflow: visible;
-		place-self: center;
-		grid-area: text;
-		background: #fff;
-		padding: 0 30px 0 30px;
-		height: 100%;
-		width: auto;
-		border-left: 2px solid rgba(0,0,0,.1);
-		z-index: 5;
-	}
-  }
